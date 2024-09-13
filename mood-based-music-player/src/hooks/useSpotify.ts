@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
 const CLIENT_ID = process.env.REACT_APP_SPOTIFY_CLIENT_ID || '';
-const REDIRECT_URI = 'http://localhost:3000/callback';
+const REDIRECT_URI = 'https://mood-music-player.vercel.app/';
 const AUTH_ENDPOINT = 'https://accounts.spotify.com/authorize';
 const RESPONSE_TYPE = 'token';
 
