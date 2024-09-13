@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #121212;
+  color: white;
+}
+
+.App {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.App-header {
+  background-color: #282828;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.App-header h1 {
+  margin: 0;
+  font-size: 3rem;
+  font-family: 'Pacifico', cursive;
+  color: #1DB954;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+}
+
+.App-header h1:hover {
+  color: #1ed760;
+  text-shadow: 3px 3px 6px rgba(0,0,0,0.4);
+  transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+  .App-header h1 {
+    font-size: 2rem;
+  }
+}
+
+/* Add this new keyframe animation */
+@keyframes colorChange {
+  0% { color: #1DB954; }
+  25% { color: #1ed760; }
+  50% { color: #4CAF50; }
+  75% { color: #1ed760; }
+  100% { color: #1DB954; }
+}
+
+.App-main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
